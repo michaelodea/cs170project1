@@ -71,9 +71,40 @@ int main(){
 	cout << "Press 1 to use Uniform Cost Search, 2 for A* with the Misplaced Tile heuristic, and 3 for A* with the Manhattan Distance heuristic. \n";
 	
 	if(algorithm != 1 && algorithm != 2 && algorithm != 3){
-	
+		
+		cout << "Please enter either 1 or 2 or 3 to solve the puzzle. \n";
+	        cin >> algorithm;
+		cout << endl;
+		while (algorithm != 1 && algorithm != 2 && algorithm != 3){
+                        cout << "Please enter either 1 or 2 or 3 to solve the puzzle. \n";
+                        cin >> algorithm;
+                }			
 	
 	}
+
+	if(algorithm == 1){
+	
+	cout << "You have chosen Uniform Cost! \n";
+	//call the uniform cost search algorithm here to solve the puzzle in the puzzle vector
+	
+	}
+	else if(algorithm == 2){
+	
+	cout << "You have chosen to use A* with the Misplaced Tile Heuristic! \n";
+	//call the Misplaced Tile Algorithm here to solve the puzzle in the puzzle vector
+	
+	}
+
+	else if(algorithm == 3){
+	
+	cout << "You have chosen to use the Manhattan Distance Heuristic! \n";
+	//call the Manhattan Distance Heuristic algorithm here to solve the puzzle vector
+	
+	}
+		
+
+
+
 }
 
 
